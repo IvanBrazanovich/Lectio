@@ -1,155 +1,136 @@
-/*==================================
-====================================
--------------Color------------------
+/*=================================
 ===================================
-    #5D5C61 GREY
-    ##938E93 grey gay
-    #7395AE light blue
-    #557A95 blueraro
-    #B1A296 beige
+              Color
+===================================
+===================================
 */
 
-html {
-  font-family: "Source Sans Pro", sans-serif;
+/*   #B0A295
+      #5D5c61
+      #379683
+      #7395AE
+      #557A95
+      #b1a296
+ */
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
-/*Home*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body,
 html {
   height: 100%;
+  width: 100%;
 }
 
-.navbar {
+/*=================================
+===================================
+              Home
+===================================
+===================================
+*/
+
+#home {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/home.jpg");
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+#home > * {
   z-index: 10;
 }
 
-#home {
-  background-image: url("../images/home.jpg");
-  height: 100%;
+#home::after {
+  content: "";
+  display: block;
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-#home-overlay {
-  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  background-color: black;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: 0;
 }
 
 #home-content {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   position: absolute;
-  top: 50%;
-  margin-top: -150px;
-  left: 50%;
-  margin-left: -330px;
-  z-index: 9;
+}
+
+#home-content-inner {
+  position: absolute;
+  top: 25%;
+  color: white;
 }
 
 #home-content-inner h3 {
-  font-size: 50px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-size: 65px;
   font-weight: 100;
 }
 
 #home-content-inner h3 span {
+  font-weight: 1000;
   color: #557a95;
-  font-weight: 600;
 }
 
 #home-content-inner {
-  color: white;
-}
-
-#btn-home {
-  color: white;
-  border: 1px solid white;
-}
-
-#home-content-inner p {
-  font-size: 20px;
-  font-weight: 100;
 }
 
 #home-content-inner h5 {
   font-size: 30px;
   font-weight: 100;
+  font
 }
 
-#arrow-down {
-  z-index: 10;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  font-size: 40px;
-  margin-left: -25px;
+#btn-home {
+  border-radius: 30px;
+  color:white;
+  font-weight: 800;
+  border: 1px solid white;
 }
 
-#arrow-down a {
-  color: white;
-}
+#btn-home:hover {
 
-#arrow-down a:hover {
-  color: #557a95;
-  transition: 300ms;
-}
+  background-color: #557a95;
+  border:  1px solid #557a95 ;
+  font-family: "Montserrat", sans-serif;
+  
 
-/*==================================
-====================================
--------------About Us------------------
-===================================*/
 
-#img-about {
-  height: auto;
-  width: auto;
-  min-width: 260px;
-  min-height: 354px;
-}
+  }
 
-#about-text {
-  position: relative;
-  margin-left: -100px;
-  width: 500px;
-  padding-right: 40px;
-}
+  #btn-home p {
+    color: black;
+  }
 
-/*==================================
-====================================
--------------About Us 2------------------
-===================================*/
+  #arrow-down {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   
+  }
 
-.cards {
-  border: solid 1px black;
-  margin: 0 10px;
-}
 
-.cards:hover {
-  color: black;
-}
+  
+  #arrow-down a {
+    font-size: 40px;
+    color: white;
+  }
 
-#card:focus {
-  color: black;
-}
-
-/*==================================
-====================================
--------------Content Box------------
-===================================*/
-
-.content-box-lg {
-  padding: 120px 0;
-}
-
-/*==================================
-====================================
--------------Cards----------------
-===================================*/
-
-.cards:hover {
-  background-color: #7395ae;
-}
+    #arrow-down a:hover {
+      color:#557a95 ;
+    }
