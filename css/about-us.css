@@ -84,7 +84,6 @@ html {
 
 .about-item:hover {
   background-color: #7395ae;
-  opacity: 0.5;
 }
 
 .about-item:hover .icon,
