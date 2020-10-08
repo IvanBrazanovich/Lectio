@@ -1,0 +1,109 @@
+/*=================================
+===================================
+              Color
+===================================
+===================================
+*/
+
+/*   #B0A295
+      #5D5c61
+      #938E93
+      #7395AE
+      #557A95
+      #b1a296
+ */
+
+.content-box-lg {
+  padding: 120px 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#about-text h3 {
+  color: #557a95;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+#about-text {
+  padding: 0 15px;
+}
+
+/*=================================
+===================================
+              Cards
+===================================
+==================================*/
+#about-02 {
+  background-color: rgba(147, 142, 147, 0.2);
+}
+
+.about-item {
+  background-color: #fff;
+  padding: 80px 30px;
+  margin: 4px;
+}
+
+.about-item .icon {
+  font-size: 42px;
+  margin: 0;
+}
+
+.about-item h3 {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.about-item hr {
+  border: none;
+  background-color: #557a95;
+  height: 3px;
+  width: 45px;
+  margin: 0 auto;
+}
+
+.about-item p {
+  margin-top: 20px;
+}
+
+/* Hover */
+
+.about-item:hover {
+  background-color: #7395ae;
+  opacity: 0.5;
+}
+
+.about-item:hover .icon,
+.about-item:hover h3,
+.about-item:hover p {
+  color: #fff;
+  font-weight: 900;
+}
+
+.about-item:hover hr {
+  background-color: #fff;
+}
+
+.about-item:hover .icon {
+  transform: translateY(-20px);
+}
+
+.about-item .icon,
+.about-item h3,
+.about-item p {
+  transition: all 400ms ease-in-out;
+}
