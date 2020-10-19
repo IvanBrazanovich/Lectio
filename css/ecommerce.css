@@ -518,3 +518,11 @@ td {
   margin: 30px 0;
   display: block;
 }
+
+@media screen and (max-width: 992px) {
+  #lista-cursos .col {
+    flex-basis: auto;
+    max-width: 600px;
+    margin: auto;
+  }
+}
