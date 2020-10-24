@@ -32,7 +32,7 @@ const infoCard = document.querySelectorAll(".info-card");
 //Ecommerce 
  const contenedorCarrito = document.querySelector("#lista-carrito tbody");
  const vaciarCarritoBtn = document.querySelector("#vaciar-carrito");
- const listaCursos = document.querySelector(".contenedor-carousel");
+ const listaCursos = document.querySelectorAll(".contenedor-carousel");
  let articulosCarrito = [];
 
 
@@ -58,7 +58,7 @@ function cargarEvenListeners() {
     });
 
 
-    listaCursos.addEventListener("click", agregarCurso);
+    listaCursos.forEach(contenedor=> contenedor.addEventListener("click", agregarCurso));
 
     contenedorCarrito.addEventListener("click", eliminarCurso);
 
@@ -107,8 +107,8 @@ function cargarEvenListeners() {
     function agregarCurso(e) {
         e.preventDefault();
         if (e.target.parentElement.classList.contains("agregar-carrito")) {
-            const cursoSeleccionado = e.target.parentElement.parentElement.parentElement;
-
+            const cursoSeleccionado = e.target.parentElement.parentElement.parentElement.parentElement;
+            console.log(cursoSeleccionado)
 
                     leerDatosCurso(cursoSeleccionado)
 
@@ -156,6 +156,7 @@ function cargarEvenListeners() {
 
         }
 
+
         const existe = articulosCarrito.some(curso => infoCurso.id === curso.id);
 
         if (existe) {
@@ -173,7 +174,6 @@ function cargarEvenListeners() {
             articulosCarrito = [...articulosCarrito, infoCurso]
         }
 
-
        
                 carritoHTML()
 
@@ -184,7 +184,7 @@ function cargarEvenListeners() {
     function carritoHTML(cursos) {
         limpiarHTML();
         //Aplicamos destructuring
-        
+       
 
         //creamos un row para meter al tbody
         articulosCarrito.forEach(curso => {
@@ -221,6 +221,8 @@ function cargarEvenListeners() {
         while(contenedorCarrito.firstChild) {
             contenedorCarrito.removeChild(contenedorCarrito.firstChild)
         }
+
+         
     }
 
 
@@ -527,8 +529,7 @@ function cargarPopUp(curso) {
 function crearHTML(cursoSelected, carouselData, position) {
 
   
-        limpiarHTML();
-
+        limpiarHTMLSpan();
     
 
     
@@ -572,17 +573,15 @@ function crearHTML(cursoSelected, carouselData, position) {
    
 }
 
+function limpiarHTMLSpan () {
+const span = document.querySelectorAll(".card-active");
 
-function limpiarHTML() {
+                span.forEach(span => {
+                    span.remove()
+                })
 
-
-    const span = document.querySelectorAll(".card-active");
-
-    span.forEach(span => {
-        span.remove()
-    })
 }
-
+ 
 
 function cardRemove () {
      const span = document.querySelectorAll(".card-active");
