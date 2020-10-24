@@ -1,3 +1,4 @@
+
 //Variables 
 
 const iconCarrito = document.querySelector(".carrito-logo");
@@ -19,12 +20,24 @@ const mensaje = document.querySelector("#mensaje");
 const enviar = document.querySelector("#enviar");
 const resetBtn = document.querySelector("#resetear");
 
+//Carousel 
+const cardCarousel = document.querySelectorAll(".card-carousel");
+const carouselItem = document.querySelectorAll(".carousel-item");
+const cursoCard = document.querySelectorAll(".carousel-flex");
+const titulo = document.querySelectorAll(".titulo h3");
+const infoCard = document.querySelectorAll(".info-card");
+
+
+
 //Ecommerce 
  const contenedorCarrito = document.querySelector("#lista-carrito tbody");
  const vaciarCarritoBtn = document.querySelector("#vaciar-carrito");
- const listaCursos = document.querySelector("#lista-cursos");
+ const listaCursos = document.querySelector(".contenedor-carousel");
  let articulosCarrito = [];
 
+
+
+   
 
 const er = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -59,6 +72,7 @@ function cargarEvenListeners() {
     //Formulario enviar mensaje 
     iconoChat.addEventListener("click", () => {
         formulario.classList.toggle("formulario-end-active")
+      
     });
 
 
@@ -73,6 +87,18 @@ function cargarEvenListeners() {
     //formulario btn
     enviar.addEventListener("click", enviarEmail);
     resetBtn.addEventListener("click", resetearFormularioR)
+
+
+
+    //Carousel
+    document.addEventListener("DOMContentLoaded", cargarCursos);
+    infoCard.forEach(card=> card.addEventListener("click", () => {
+      
+    }));
+   
+
+   cursoCard.forEach(curso => curso.addEventListener("mouseover", cardPopUp)); 
+   cursoCard.forEach(curso => curso.addEventListener("mouseleave", cardRemove)); 
 
 }
 
@@ -375,4 +401,193 @@ function resetearFormularioR(e) {
                 error.remove()
           
             }
+}
+
+
+
+
+
+
+//CAROUSEL
+
+
+
+
+
+function cargarCursos () {
+
+      
+             let etapa = 1;
+
+            carouselItem.forEach(item => {
+
+                if (etapa === 4) {
+                    etapa = 1;
+                }
+
+               
+
+                if (etapa <= 3) {
+                max = (5 * etapa) -1 ;
+                min = 5 * (etapa - 1) ;
+
+
+                const carouselFlex = item.querySelector(".carousel-flex")
+                        let position = 1;
+
+
+
+                cursos.forEach((curso,index) => {
+
+                        if( index >= min && index <=max) {
+                            
+                        
+                            if (position % 6 !== 0) {
+                        const {profesor, id, imagen, titulo} = curso;
+
+                        const cardCarousel = document.createElement("div");
+                        cardCarousel.innerHTML = `
+
+                            <div class="card-carousel" position = ${position} data-id ="${id}">
+
+                    <img class="portrait" src="${imagen}" alt="profe-1">
+                        <div class="info-carousel">
+                            <h4>${titulo}</h4>
+                            <p>${profesor}</p>
+                            <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+            
+                            <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                        
+            
+            
+            
+                        </div>
+                `                   
+                                    position++;
+
+                            carouselFlex.appendChild(cardCarousel)
+
+                    }
+                        }
+                    });
+
+                 etapa++;
+                } 
+
+
+               
+            });
+ }
+
+
+ function cardPopUp (curso) {
+    
+ 
+  
+  if ( curso.target.parentElement.classList.contains("info-carousel")) {
+      const cursoSelected = curso.target.parentElement.parentElement;
+      cargarPopUp(cursoSelected)
+     
+  } else if( curso.target.parentElement.classList.contains("card-carousel")) {
+      const cursoSelected = curso.target.parentElement;
+          cargarPopUp(cursoSelected)
+
+  }
+
+        
+
+
+ }
+
+
+
+
+
+   
+
+    
+   
+
+
+function cargarPopUp(curso) {
+
+  
+    const position = parseInt(curso.getAttribute("position"));
+    const id = parseInt(curso.getAttribute("data-id"));    
+    const carouselData =  curso;
+
+    const cursoSelected = cursos.filter(curso => curso.id === id);
+    crearHTML(cursoSelected, carouselData, position);
+
+    
+    
+}
+
+
+function crearHTML(cursoSelected, carouselData, position) {
+
+  
+        limpiarHTML();
+
+    
+
+    
+
+    //destructuring de arrays 
+    const [curso] = cursoSelected;
+
+    //Destructuring de objetos 
+    const {especificacion, id, titulo} = curso;
+
+   
+
+
+
+    const cardActive = document.createElement("div");
+    cardActive.classList.add("card-active");
+   
+    cardActive.innerHTML = `
+    
+        
+                  <div class="info-card">
+                    <h4>${titulo}</h4>
+                    <p>${especificacion}</p>
+                    <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+                    <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+              
+                    <a href="#" data-id="${id}"  class="agregar-carrito"><button>Agregar Al Carrito</button></a>
+                  </div>
+    `
+
+
+        if (cardActive) {
+        }
+    
+    
+    carouselData.appendChild(cardActive)
+
+
+
+
+   
+}
+
+
+function limpiarHTML() {
+
+
+    const span = document.querySelectorAll(".card-active");
+
+    span.forEach(span => {
+        span.remove()
+    })
+}
+
+
+function cardRemove () {
+     const span = document.querySelectorAll(".card-active");
+
+    span.forEach(span => {
+        span.remove()
+    })
 }

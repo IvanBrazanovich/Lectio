@@ -450,6 +450,102 @@ td {
 
 /*=================================
 ===================================
+              carousel
+===================================
+===================================
+*/
+
+.carousel-inner-2 {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.controles-carousel {
+  display: table;
+}
+
+.carousel-flex {
+  display: flex;
+}
+
+.card-carousel {
+  margin: 20px 10px;
+  height: 250px;
+  max-width: 250px;
+}
+
+.card-carousel .portrait {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.info-carousel {
+  margin: 0 5px;
+  padding: 0px 5px;
+  display: table;
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+
+.info-carousel h4 {
+  margin: 0;
+}
+
+.info-carousel p {
+  margin: 0;
+}
+
+.info-carousel .precio {
+  display: flex;
+}
+
+.info-carousel p {
+  text-decoration: line-through;
+}
+
+.info-carousel .precio span {
+  font-weight: 900;
+  font-size: 20px;
+  text-emphasis: none !important;
+  position: relative;
+  bottom: 4px;
+}
+
+.carousel-control {
+  height: 50px;
+  width: 50px;
+  background-color: #557a95;
+  border-radius: 50%;
+  display: flex;
+}
+
+.control-right {
+  position: relative;
+  left: 45px;
+}
+
+.control {
+  font-size: 40px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.control-a span {
+  position: relative;
+  bottom: 10%;
+  display: table;
+}
+
+.control {
+  position: relative;
+  top: 5px;
+}
+/*=================================
+===================================
               CURSOS
 ===================================
 ===================================
@@ -557,21 +653,19 @@ td {
   flex-grow: 1;
 }
 
-#formulario-div {
-  position: relative;
-  left: 71.7%;
-}
-
 .formulario-end {
   border: 1px solid #000000;
   width: 400px;
   height: 450px;
-  position: relative;
   display: none;
+  background-color: #ffffff;
 }
 
 .formulario-end-active {
   display: block !important;
+  position: absolute;
+  right: 0;
+  margin-top: -450px;
 }
 
 .formulario-end header {

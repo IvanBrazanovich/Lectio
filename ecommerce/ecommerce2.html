@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lectio</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css//fontawesome/fontawesome.min.css" />
+
+    <link rel="stylesheet" href="../css/ecommerce-2.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <section><header>
+      <nav>
+        <div class="left">
+          <div class="logo">
+            Lectio
+          </div>
+          <div class="categorias-div">
+            <li class="categorias"><a href="#">Categorías</a></li>
+    
+            <div class="categorias-collapse">
+              <div class="categoria primaria"> <span>Primaria</span> <i class="fas fa-angle-right icon-angle"></i>
+    
+                <div class="primaria-collapse">
+                  <div class="materia">Lengua</div>
+                  <div class="materia">Matemáticas</div>
+                  <div class="materia">Física</div>
+                  <div class="materia">Ciencias Naturales</div>
+                  <div class="materia">Ciencias Sociales</div>
+                  <div class="materia">Biología</div>
+                  <div class="materia">Geografía</div>
+                  <div class="materia">Economía</div>
+                  <div class="materia">Arte</div>
+                  <div class="materia">Historia</div>
+                  <div class="materia">Ética</div>
+                </div>
+              </div>
+    
+              <div class="categoria secundaria"><span>Secundaria</span><i class="fas fa-angle-right icon-angle"></i>
+                <div class="secundaria-collapse">
+                  <div class="materia">Lengua</div>
+                  <div class="materia">Matemáticas</div>
+                  <div class="materia">Física</div>
+                  <div class="materia">Ciencias Naturales</div>
+                  <div class="materia">Ciencias Sociales</div>
+                  <div class="materia">Biología</div>
+                  <div class="materia">Geografía</div>
+                  <div class="materia">Economía</div>
+                  <div class="materia">Arte</div>
+                  <div class="materia">Historia</div>
+                  <div class="materia">Ética</div>
+                </div>
+              </div>
+              <div class="categoria terciario"><span>Terciario</span><i class="fas fa-angle-right icon-angle"></i>
+                <div class="terciario-collapse">
+                  <div class="materia">Lengua</div>
+                  <div class="materia">Matemáticas</div>
+                  <div class="materia">Física</div>
+                  <div class="materia">Ciencias Naturales</div>
+                  <div class="materia">Ciencias Sociales</div>
+                  <div class="materia">Biología</div>
+                  <div class="materia">Geografía</div>
+                  <div class="materia">Economía</div>
+                  <div class="materia">Arte</div>
+                  <div class="materia">Historia</div>
+                  <div class="materia">Ética</div>
+                </div>
+              </div>
+              <div class="categoria universidad"><span>universidad</span><i class="fas fa-angle-right icon-angle"></i>
+                <div class="universidad-collapse">
+                  <div class="materia">Lengua</div>
+                  <div class="materia">Matemáticas</div>
+                  <div class="materia">Física</div>
+                  <div class="materia">Ciencias Naturales</div>
+                  <div class="materia">Ciencias Sociales</div>
+                  <div class="materia">Biología</div>
+                  <div class="materia">Geografía</div>
+                  <div class="materia">Economía</div>
+                  <div class="materia">Arte</div>
+                  <div class="materia">Historia</div>
+                  <div class="materia">Ética</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <form class="nav-form" action="#">
+          <input type="text" placeholder="Search">
+          <button class="fas fa-search nav-button"></button>
+    
+        </form>
+    
+        <div class="nav-items">
+          <li class="ser-profe also "><a href="#">Ser Profesor</a></li>
+          <li class="also apoyar"><a href="#">Apóyanos</a></li>
+          <li class="also carrito-logo"><a href="#"> <i class="fas fa-shopping-cart"></i></a></li>
+          <div class="carrito">
+    
+            <table id="lista-carrito" class="u-full-width">
+              <thead>
+                <tr>
+                  <th>Imagen</th>
+                  <th>Nombre</th>
+                  <th>Precio</th>
+                  <th>Cantidad</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+    
+            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+          </div>
+          <li class="iniciar"><a href="#"> Iniciar Sesión</a></li>
+          <li class="registrar"><a href="#">Registrarse</a></li>
+        </div>
+    
+    
+    
+    
+      </nav>
+    </header></section>
+
+    <!--End NAVBAR-->
+
+
+    <!--HERO-->
+    <section>
+
+        <div id="hero">
+          <div class="container">
+            <div class="row">
+              <div class="contenido-hero">
+                <h2>Aprende a tu ritmo</h2>
+                <p>En cualquier momento y en cualquier lugar. <br> ¡Empieza a aprender hoy mo!</p>
+                <form action="#" id="busqueda" method="post" class="formulario">
+                  <input class="u-full-width" type="text" placeholder="¿Que te gustaría Aprender?" id="buscador">
+                </form>
+              </div>
+            </div>
+          </div>
+        
+        
+        </div>
+        
+        <div class="barra">
+          <div class="container">
+            <div class="row ">
+              <div class="col">
+                <div class="row">
+                  <div class="col-3 barra-icon-div"><span><i class="icon-barra fab fa-accusoft"></i> </span>
+                  </div>
+                  <div class="col-9 barra-text">
+                    <p><span>Acceso de por vida</span> <br>
+                      Aprende a tu ritmo</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="row">
+                  <div class="col-3  barra-icon-div">
+                    <span><i class=" icon-barra fab fa-centos"></i></span></div>
+                  <div class="col-9 barra-text">
+                    <p><span>Acceso de por vida</span> <br>
+                      Aprende a tu ritmo</p>
+                  </div>
+                </div>
+              </div>
+        
+        
+        
+              <div class="col">
+                <div class="row">
+                  <div class="col-3  barra-icon-div"><span><i class=" icon-barra fab fa-battle-net"></i> </span></div>
+                  <div class="col-9 barra-text">
+                    <p><span>Acceso de por vida</span> <br>
+                      Aprende a tu ritmo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+        <!--END HERO-->
+
+        <!--Lista cursos-->
+        
+
+
+        <!--Carousel -->
+
+        <div id="carousel-1-div" class="contenedor-carousel">
+  <div class="titulo text-center">
+    <h3>Primaria</h3>
+  </div>
+
+  
+  <div id="carousel-1" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner-2">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-flex" >
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel" data-id="1">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+
+
+          
+  
+            <!--CARD FINAL-->
+  
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/history.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Historia</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/economy.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Economía</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/geografia.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Geografía</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Matemáticas</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+  
+  
+          </div>
+  
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-flex" >
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/lengua.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Lengua</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4></h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Matemáticas</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Matemáticas</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/art.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Arte</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+  
+  
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-flex" >
+  
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/history.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Historia</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/economy.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Economía</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/geografia.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Geografía</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Matemáticas</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <!--CARD FINAL-->
+  
+  
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="controles-carousel">
+      <a class="carousel-control-prev control-a " href="#carousel-1" role="button" data-slide="prev">
+        <span class="carousel-control" aria-hidden="true"><i class="fas fa-angle-left control-prev control"></i></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next control-a" href="#carousel-1" role="button" data-slide="next">
+        <span class="carousel-control control-right" aria-hidden="true"> <i
+            class="fas fa-angle-right control-next control"></i></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  
+  </div>
+
+          
+        </div>
+
+
+  <div id="carousel-2-div" class="contenedor-carousel">
+    <div class="titulo  text-center">
+      <h3>Secundaria</h3>
+    </div>
+  
+    <div id="carousel-2" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner-2">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-flex" >
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Ciencias Naturales</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Ciencias Naturales</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/history.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Historia</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/economy.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Economía</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/geografia.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Geografía</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Matemáticas</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+  
+  
+            </div>
+  
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-flex" >
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Ciencias Naturales</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/lengua.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Lengua</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4></h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Matemáticas</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Matemáticas</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/art.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Arte</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+  
+  
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-flex" >
+  
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Ciencias Naturales</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Ciencias Naturales</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/history.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Historia</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/economy.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Economía</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/geografia.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Geografía</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+              <!--CARD INICIO-->
+              <div class="card-carousel">
+                <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+                <div class="info-carousel">
+                  <h4>Matemáticas</h4>
+                  <p>Rodolfo</p>
+                  <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+  
+                  <div class="precio">
+                    <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                  </div>
+  
+  
+  
+                </div>
+              </div>
+  
+              <!--CARD FINAL-->
+  
+  
+  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="controles-carousel">
+        <a class="carousel-control-prev control-a " href="#carousel-2" role="button" data-slide="prev">
+          <span class="carousel-control" aria-hidden="true"><i class="fas fa-angle-left control-prev control"></i></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next control-a" href="#carousel-2" role="button" data-slide="next">
+          <span class="carousel-control control-right" aria-hidden="true"> <i
+              class="fas fa-angle-right control-next control"></i></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  
+    </div>
+  
+  
+  </div>
+
+
+<div id="carousel-3-div" class="contenedor-carousel">
+  <div class="titulo text-center">
+    <h3>Terciario</h3>
+  </div>
+
+  <div id="carousel-3 " class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner-2">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-flex" >
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/history.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Historia</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/economy.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Economía</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/geografia.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Geografía</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Matemáticas</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+
+
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-flex" >
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/lengua.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Lengua</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4></h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Matemáticas</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Matemáticas</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/art.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Arte</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-flex" >
+
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/history.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Historia</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/economy.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Economía</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/geografia.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Geografía</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Matemáticas</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="controles-carousel">
+      <a class="carousel-control-prev control-a " href="#carousel-3" role="button" data-slide="prev">
+        <span class="carousel-control" aria-hidden="true"><i class="fas fa-angle-left control-prev control"></i></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next control-a" href="#carousel-3" role="button" data-slide="next">
+        <span class="carousel-control control-right" aria-hidden="true"> <i
+            class="fas fa-angle-right control-next control"></i></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+
+
+</div>
+
+<div id="carousel-4-div" class="contenedor-carousel">
+  <div class="titulo text-center">
+    <h3>universidad</h3>
+  </div>
+
+  <div id="carousel-4" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner-2">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-flex" >
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/history.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Historia</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/economy.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Economía</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/geografia.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Geografía</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Matemáticas</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+
+
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-flex" >
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/lengua.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Lengua</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4></h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Matemáticas</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Matemáticas</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/art.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Arte</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-flex" >
+
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/ciencia-natural.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Ciencias Naturales</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/history.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Historia</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/economy.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Economía</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/geografia.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Geografía</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+            <!--CARD INICIO-->
+            <div class="card-carousel">
+              <img class="portrait" src="../images/ecommerce/matematicas.jpg" alt="profe-1">
+              <div class="info-carousel">
+                <h4>Matemáticas</h4>
+                <p>Rodolfo</p>
+                <img src="../images/ecommerce/estrellas.png" alt="estrellas">
+
+                <div class="precio">
+                  <p class="precio">$200 </p> <span class="u-pull-right">$15</span>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <!--CARD FINAL-->
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="controles-carousel">
+      <a class="carousel-control-prev control-a " href="#carousel-4" role="button" data-slide="prev">
+        <span class="carousel-control" aria-hidden="true"><i class="fas fa-angle-left control-prev control"></i></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next control-a" href="#carousel-4" role="button" data-slide="next">
+        <span class="carousel-control control-right" aria-hidden="true"> <i
+            class="fas fa-angle-right control-next control"></i></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+
+
+</div>
+
+<section>
+  <span id="formulario-div">
+    <form class="formulario-end text-center">
+      <header>Envíanos un Mail</header>
+      <div class="form">
+        <label for="email">Mi Mail:</label>
+        <input id="email" type="email">
+      </div>
+
+      <div class="form">
+        <label for="Asunto">Asunto:</label>
+        <input id="asunto" type="text">
+      </div>
+
+      <div class="form">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" cols="30" rows="10"></textarea>
+      </div>
+
+
+      <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+      </div>
+
+
+
+      <div id="button-end-div">
+        <button type="submit" id="enviar">Enviar
+          <i class="fas fa-paper-plane"></i>
+        </button>
+
+        <button id="resetear">Resetear Form
+          <i class="fas fa-trash"></i>
+        </button>
+      </div>
+
+    </form>
+
+  </span>
+
+
+  <div id="mensaje-div">
+    <div id="mensaje-text">
+      <h5>Envíanos un mensaje</h5>
+    </div>
+
+    <div type="submit" id="icono-chat">
+      <i class="fas fa-comment"></i>
+    </div>
+
+  </div>
+
+
+
+
+</section> 
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="../js/fontawesome/all.min.js"></script>
+<script src="../js/fontawesome/fontawesome.min.js"></script>
+<script src="../js/prueba.js"></script>
+<script src="../js/ecommerce.js"></script>
+</body>
+
+</html>
