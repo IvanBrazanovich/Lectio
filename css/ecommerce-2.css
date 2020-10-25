@@ -287,7 +287,7 @@ td {
   top: 72px;
   left: 135px;
   background-color: rgb(222, 221, 215);
-  height: 150px;
+  height: 200px;
   width: 200px;
 }
 
@@ -306,6 +306,10 @@ td {
 
 .categoria:hover span {
   color: #557a95;
+}
+
+.categoria span li {
+  text-decoration: none;
 }
 .icon-angle {
   position: absolute;
